@@ -1,0 +1,352 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Tue May 22 16:09:22 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 22 May 2018 06:32:37
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_170_79_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/.virtualenvs/mxonline2/projects/MxOnline/conf
+detected binary path: /root/.virtualenvs/mxonline2/bin/uwsgi
+setuid() to 1001
+your processes number limit is 3895
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+building mime-types dictionary from file /etc/mime.types...1060 entry found
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to TCP address 127.0.0.1:18883 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x14ef8e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 321048 bytes (313 KB) for 2 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22664)
+spawned uWSGI worker 1 (pid: 22665, cores: 1)
+spawned uWSGI worker 2 (pid: 22666, cores: 1)
+WSGI app 0 (mountpoint='139.199.23.236|') ready in 0 seconds on interpreter 0x14ef8e0 pid: 22665
+139.199.23.236 [pid: 22665|app: 0|req: 1/1] 117.136.67.242 () {50 vars in 886 bytes} [Tue May 22 16:09:26 2018] GET / => generated 25197 bytes in 866 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+WSGI app 0 (mountpoint='139.199.23.236:80|') ready in 0 seconds on interpreter 0x14ef8e0 pid: 22666
+139.199.23.236:80 [pid: 22666|app: 0|req: 1/2] 187.195.68.19 () {40 vars in 626 bytes} [Tue May 22 16:12:06 2018] GET / => generated 25197 bytes in 846 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 2/3] 117.136.67.242 () {50 vars in 886 bytes} [Tue May 22 16:12:18 2018] GET / => generated 25197 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+WSGI app 1 (mountpoint='139.199.23.236|') ready in 1 seconds on interpreter 0x25e6990 pid: 22666
+139.199.23.236 [pid: 22666|app: 1|req: 1/4] 117.136.67.242 () {48 vars in 867 bytes} [Tue May 22 16:13:47 2018] GET /xadmin => generated 0 bytes in 970 msecs (HTTP/1.1 301) 3 headers in 123 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 3/5] 117.136.67.242 () {48 vars in 869 bytes} [Tue May 22 16:13:48 2018] GET /xadmin/ => generated 4366 bytes in 181 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 2/6] 117.136.67.242 () {50 vars in 868 bytes} [Tue May 22 16:13:49 2018] GET /xadmin/jsi18n/ => generated 4373 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 4/7] 117.136.67.242 () {60 vars in 1155 bytes} [Tue May 22 16:14:04 2018] POST /xadmin/ => generated 0 bytes in 49 msecs (HTTP/1.1 302) 9 headers in 527 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 3/8] 117.136.67.242 () {54 vars in 1046 bytes} [Tue May 22 16:14:04 2018] GET /xadmin/ => generated 23665 bytes in 1106 msecs (HTTP/1.1 200) 7 headers in 382 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 5/9] 117.136.67.242 () {50 vars in 912 bytes} [Tue May 22 16:14:06 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 4/10] 117.136.67.242 () {50 vars in 942 bytes} [Tue May 22 16:14:09 2018] GET /favicon.ico => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 6/11] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:16:07 2018] GET / => generated 26567 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 5/12] 117.136.67.242 () {52 vars in 987 bytes} [Tue May 22 16:21:01 2018] GET / => generated 26567 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 7/13] 117.136.67.242 () {50 vars in 970 bytes} [Tue May 22 16:22:51 2018] GET /xadmin/ => generated 23665 bytes in 1014 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 6/14] 117.136.67.242 () {50 vars in 912 bytes} [Tue May 22 16:22:52 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 8/15] 117.136.67.242 () {52 vars in 1001 bytes} [Tue May 22 16:25:23 2018] GET /xadmin/ => generated 23665 bytes in 58 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 7/16] 117.136.67.242 () {50 vars in 955 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/vendor/bootstrap/css/bootstrap.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 9/17] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/css/themes/bootstrap-xadmin.css => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 8/18] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/css/xadmin.responsive.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 10/19] 117.136.67.242 () {50 vars in 965 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/vendor/font-awesome/css/font-awesome.min.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 9/20] 117.136.67.242 () {50 vars in 940 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/css/xadmin.main.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 11/21] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/css/xadmin.plugins.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 10/22] 117.136.67.242 () {50 vars in 950 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/css/xadmin.page.dashboard.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 12/23] 117.136.67.242 () {50 vars in 933 bytes} [Tue May 22 16:25:23 2018] GET /static/xadmin/vendor/jquery/jquery.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 11/24] 117.136.67.242 () {50 vars in 912 bytes} [Tue May 22 16:25:23 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 13/25] 117.136.67.242 () {50 vars in 944 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 12/26] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.min.js => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 14/27] 117.136.67.242 () {50 vars in 945 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 13/28] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 15/29] 117.136.67.242 () {50 vars in 942 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/bootstrap/js/bootstrap.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 14/30] 117.136.67.242 () {50 vars in 923 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.main.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 16/31] 117.136.67.242 () {50 vars in 929 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.responsive.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 15/32] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 17/33] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.plugin.themes.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 16/34] 117.136.67.242 () {50 vars in 933 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.page.dashboard.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 18/35] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.plugin.portal.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 17/36] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 19/37] 117.136.67.242 () {50 vars in 942 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/bootstrap/js/bootstrap.min.js => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 18/38] 117.136.67.242 () {50 vars in 923 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.main.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 20/39] 117.136.67.242 () {50 vars in 929 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/js/xadmin.responsive.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 19/40] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:25:24 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 21/41] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:25:25 2018] GET /static/xadmin/js/xadmin.plugin.themes.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 20/42] 117.136.67.242 () {50 vars in 933 bytes} [Tue May 22 16:25:25 2018] GET /static/xadmin/js/xadmin.page.dashboard.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 22/43] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:25:25 2018] GET /static/xadmin/js/xadmin.plugin.portal.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 21/44] 117.136.67.242 () {52 vars in 1001 bytes} [Tue May 22 16:33:59 2018] GET /xadmin/ => generated 23665 bytes in 68 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 23/45] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/css/themes/bootstrap-xadmin.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 22/46] 117.136.67.242 () {50 vars in 955 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/vendor/bootstrap/css/bootstrap.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 24/47] 117.136.67.242 () {50 vars in 965 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/vendor/font-awesome/css/font-awesome.min.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 23/48] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/css/xadmin.plugins.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 25/49] 117.136.67.242 () {50 vars in 940 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/css/xadmin.main.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 24/50] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/css/xadmin.responsive.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 26/51] 117.136.67.242 () {50 vars in 933 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/vendor/jquery/jquery.min.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 27/52] 117.136.67.242 () {50 vars in 950 bytes} [Tue May 22 16:33:59 2018] GET /static/xadmin/css/xadmin.page.dashboard.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 25/53] 117.136.67.242 () {50 vars in 912 bytes} [Tue May 22 16:33:59 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 26/54] 117.136.67.242 () {50 vars in 945 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.min.js => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 28/55] 117.136.67.242 () {50 vars in 944 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.min.js => generated 668 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 27/56] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.min.js => generated 668 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 29/57] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js => generated 668 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 28/58] 117.136.67.242 () {50 vars in 923 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.main.js => generated 668 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 30/59] 117.136.67.242 () {50 vars in 942 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/bootstrap/js/bootstrap.min.js => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 29/60] 117.136.67.242 () {50 vars in 929 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.responsive.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 31/61] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.plugin.themes.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 30/62] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 32/63] 117.136.67.242 () {50 vars in 933 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.page.dashboard.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 31/64] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.plugin.portal.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 33/65] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 32/66] 117.136.67.242 () {50 vars in 945 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 34/67] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 33/68] 117.136.67.242 () {50 vars in 942 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/bootstrap/js/bootstrap.min.js => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 35/69] 117.136.67.242 () {50 vars in 923 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.main.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 34/70] 117.136.67.242 () {50 vars in 929 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.responsive.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 36/71] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 35/72] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.plugin.themes.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 37/73] 117.136.67.242 () {50 vars in 933 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.page.dashboard.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 36/74] 117.136.67.242 () {50 vars in 932 bytes} [Tue May 22 16:34:00 2018] GET /static/xadmin/js/xadmin.plugin.portal.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 38/75] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:34:05 2018] GET / => generated 26567 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 37/76] 117.136.67.242 () {50 vars in 920 bytes} [Tue May 22 16:34:05 2018] GET /static/css/reset.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 39/77] 117.136.67.242 () {50 vars in 922 bytes} [Tue May 22 16:34:05 2018] GET /static/css/animate.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 38/78] 117.136.67.242 () {50 vars in 920 bytes} [Tue May 22 16:34:05 2018] GET /static/css/style.css => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 40/79] 117.136.67.242 () {50 vars in 908 bytes} [Tue May 22 16:34:05 2018] GET /static/js/jquery.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 39/80] 117.136.67.242 () {50 vars in 922 bytes} [Tue May 22 16:34:05 2018] GET /static/js/jquery-migrate-1.2.1.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 41/81] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:05 2018] GET /static/images/top_down.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 40/82] 117.136.67.242 () {50 vars in 971 bytes} [Tue May 22 16:34:05 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 42/83] 117.136.67.242 () {50 vars in 970 bytes} [Tue May 22 16:34:05 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 41/84] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:34:05 2018] GET /static/images/logo.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 43/85] 117.136.67.242 () {50 vars in 949 bytes} [Tue May 22 16:34:05 2018] GET /static/images/search_btn.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 42/86] 117.136.67.242 () {50 vars in 922 bytes} [Tue May 22 16:34:05 2018] GET /static/js/jquery-migrate-1.2.1.min.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 44/87] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:34:05 2018] GET /static/js/selectUi.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 43/88] 117.136.67.242 () {50 vars in 909 bytes} [Tue May 22 16:34:05 2018] GET /static/js/deco-common.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 45/89] 117.136.67.242 () {50 vars in 921 bytes} [Tue May 22 16:34:05 2018] GET /static/js/plugins/laydate/laydate.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 44/90] 117.136.67.242 () {50 vars in 917 bytes} [Tue May 22 16:34:05 2018] GET /static/js/plugins/layer/layer.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 45/91] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:34:05 2018] GET /static/js/unslider.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 46/92] 117.136.67.242 () {50 vars in 926 bytes} [Tue May 22 16:34:05 2018] GET /static/js/plugins/jquery.scrollLoading.js => generated 668 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 46/93] 117.136.67.242 () {50 vars in 925 bytes} [Tue May 22 16:34:05 2018] GET /static/js/plugins/queryCity/js/public.js => generated 668 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 47/94] 117.136.67.242 () {50 vars in 903 bytes} [Tue May 22 16:34:05 2018] GET /static/js/index.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 47/95] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:34:05 2018] GET /static/images/nav_hot.png => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 48/96] 117.136.67.242 () {50 vars in 978 bytes} [Tue May 22 16:34:05 2018] GET /media/banner/2018/05/540e57300001d6d906000338-240-135.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 48/97] 117.136.67.242 () {50 vars in 921 bytes} [Tue May 22 16:34:05 2018] GET /static/js/plugins/laydate/laydate.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 49/98] 117.136.67.242 () {50 vars in 951 bytes} [Tue May 22 16:34:05 2018] GET /media/banner/2018/05/mysql.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 49/99] 117.136.67.242 () {50 vars in 978 bytes} [Tue May 22 16:34:05 2018] GET /media/banner/2018/05/57035ff200014b8a06000338-240-135.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 50/100] 117.136.67.242 () {50 vars in 997 bytes} [Tue May 22 16:34:06 2018] GET /media/banner/2018/05/python%E9%94%99%E8%AF%AF%E5%92%8C%E5%BC%82%E5%B8%B8.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 50/101] 117.136.67.242 () {50 vars in 988 bytes} [Tue May 22 16:34:06 2018] GET /media/banner/2018/05/python%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 51/102] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /static/images/feature1.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 51/103] 117.136.67.242 () {50 vars in 917 bytes} [Tue May 22 16:34:06 2018] GET /static/js/plugins/layer/layer.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 52/104] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /static/images/feature2.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 52/105] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /static/images/feature3.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 53/106] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /static/images/feature4.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 53/107] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:06 2018] GET /static/images/module1_1.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 54/108] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:34:06 2018] GET /media/courses/2018/05/mysql.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 54/109] 117.136.67.242 () {50 vars in 987 bytes} [Tue May 22 16:34:06 2018] GET /media/courses/2018/05/540e57300001d6d906000338-240-135_MSIqfvw.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 55/110] 117.136.67.242 () {50 vars in 987 bytes} [Tue May 22 16:34:06 2018] GET /media/courses/2018/05/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 55/111] 117.136.67.242 () {50 vars in 989 bytes} [Tue May 22 16:34:06 2018] GET /media/courses/2018/05/python%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 56/112] 117.136.67.242 () {50 vars in 925 bytes} [Tue May 22 16:34:06 2018] GET /static/js/plugins/queryCity/js/public.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 56/113] 117.136.67.242 () {50 vars in 960 bytes} [Tue May 22 16:34:06 2018] GET /media/courses/2018/05/mysql_Y5wGew6.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 57/114] 117.136.67.242 () {50 vars in 987 bytes} [Tue May 22 16:34:06 2018] GET /media/courses/2018/05/57035ff200014b8a06000338-240-135_0nFiBSI.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 57/115] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:06 2018] GET /static/images/module3_1.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 58/117] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/jike.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 58/117] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/imooc_OO2ykYP.png => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 59/118] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/maizi.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 59/119] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:34:06 2018] GET /static/js/unslider.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 60/120] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/mooc.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 60/121] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/kehan.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 61/122] 117.136.67.242 () {50 vars in 950 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/tengxun.png => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 61/123] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/bjdx.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 62/124] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/imooc.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 62/125] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/imooc_V0TJOyb.png => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 63/126] 117.136.67.242 () {50 vars in 926 bytes} [Tue May 22 16:34:06 2018] GET /static/js/plugins/jquery.scrollLoading.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 63/127] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:34:06 2018] GET /media/org/2018/05/qhdx-logo.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 64/128] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:34:06 2018] GET /static/images/footlogo.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 64/129] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:34:06 2018] GET /static/images/code.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 65/130] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:34:06 2018] GET /static/images/tell.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22666|app: 1|req: 65/131] 117.136.67.242 () {50 vars in 909 bytes} [Tue May 22 16:34:06 2018] GET /static/js/deco-common.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 22665|app: 0|req: 66/132] 117.136.67.242 () {50 vars in 903 bytes} [Tue May 22 16:34:06 2018] GET /static/js/index.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue May 22 16:35:37 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 22 May 2018 06:32:37
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_170_79_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/.virtualenvs/mxonline2/projects/MxOnline
+detected binary path: /root/.virtualenvs/mxonline2/bin/uwsgi
+setuid() to 1001
+your processes number limit is 3895
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+building mime-types dictionary from file /etc/mime.types...1060 entry found
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to TCP address 127.0.0.1:18883 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x18be8e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 321048 bytes (313 KB) for 2 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23900)
+spawned uWSGI worker 1 (pid: 23901, cores: 1)
+spawned uWSGI worker 2 (pid: 23902, cores: 1)
+WSGI app 0 (mountpoint='139.199.23.236|') ready in 1 seconds on interpreter 0x18be8e0 pid: 23901
+139.199.23.236 [pid: 23901|app: 0|req: 1/1] 117.136.67.242 () {52 vars in 987 bytes} [Tue May 22 16:35:40 2018] GET / => generated 26567 bytes in 836 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 2/2] 117.136.67.242 () {50 vars in 922 bytes} [Tue May 22 16:35:41 2018] GET /static/css/animate.css => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 3/3] 117.136.67.242 () {50 vars in 920 bytes} [Tue May 22 16:35:41 2018] GET /static/css/style.css => generated 668 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 4/4] 117.136.67.242 () {50 vars in 908 bytes} [Tue May 22 16:35:41 2018] GET /static/js/jquery.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 5/5] 117.136.67.242 () {50 vars in 922 bytes} [Tue May 22 16:35:41 2018] GET /static/js/jquery-migrate-1.2.1.min.js => generated 668 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 6/6] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:41 2018] GET /static/images/top_down.png => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 7/7] 117.136.67.242 () {50 vars in 971 bytes} [Tue May 22 16:35:41 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 8/8] 117.136.67.242 () {50 vars in 970 bytes} [Tue May 22 16:35:42 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 9/9] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:35:42 2018] GET /static/js/selectUi.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 10/10] 117.136.67.242 () {50 vars in 909 bytes} [Tue May 22 16:35:42 2018] GET /static/js/deco-common.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+WSGI app 0 (mountpoint='139.199.23.236|') ready in 1 seconds on interpreter 0x18be8e0 pid: 23902
+139.199.23.236 [pid: 23901|app: 0|req: 11/11] 117.136.67.242 () {50 vars in 921 bytes} [Tue May 22 16:35:42 2018] GET /static/js/plugins/laydate/laydate.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 12/12] 117.136.67.242 () {50 vars in 917 bytes} [Tue May 22 16:35:42 2018] GET /static/js/plugins/layer/layer.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 1/13] 117.136.67.242 () {50 vars in 920 bytes} [Tue May 22 16:35:41 2018] GET /static/css/reset.css => generated 668 bytes in 1030 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 13/14] 117.136.67.242 () {50 vars in 925 bytes} [Tue May 22 16:35:42 2018] GET /static/js/plugins/queryCity/js/public.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 2/15] 117.136.67.242 () {50 vars in 922 bytes} [Tue May 22 16:35:42 2018] GET /static/js/jquery-migrate-1.2.1.min.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 14/16] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:35:42 2018] GET /static/js/unslider.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 3/17] 117.136.67.242 () {50 vars in 926 bytes} [Tue May 22 16:35:42 2018] GET /static/js/plugins/jquery.scrollLoading.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 15/18] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:35:42 2018] GET /static/images/logo.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 4/19] 117.136.67.242 () {50 vars in 949 bytes} [Tue May 22 16:35:42 2018] GET /static/images/search_btn.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 16/20] 117.136.67.242 () {50 vars in 903 bytes} [Tue May 22 16:35:42 2018] GET /static/js/index.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 5/21] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:35:42 2018] GET /static/js/selectUi.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 17/22] 117.136.67.242 () {50 vars in 946 bytes} [Tue May 22 16:35:42 2018] GET /static/images/nav_hot.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 6/23] 117.136.67.242 () {50 vars in 978 bytes} [Tue May 22 16:35:43 2018] GET /media/banner/2018/05/540e57300001d6d906000338-240-135.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 18/24] 117.136.67.242 () {50 vars in 997 bytes} [Tue May 22 16:35:43 2018] GET /media/banner/2018/05/python%E9%94%99%E8%AF%AF%E5%92%8C%E5%BC%82%E5%B8%B8.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 7/25] 117.136.67.242 () {50 vars in 978 bytes} [Tue May 22 16:35:43 2018] GET /media/banner/2018/05/57035ff200014b8a06000338-240-135.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 19/26] 117.136.67.242 () {50 vars in 951 bytes} [Tue May 22 16:35:43 2018] GET /media/banner/2018/05/mysql.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 8/27] 117.136.67.242 () {50 vars in 988 bytes} [Tue May 22 16:35:43 2018] GET /media/banner/2018/05/python%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 20/28] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /static/images/feature1.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 9/29] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /static/images/feature2.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 21/30] 117.136.67.242 () {50 vars in 909 bytes} [Tue May 22 16:35:43 2018] GET /static/js/deco-common.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 10/31] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /static/images/feature3.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 22/32] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /static/images/feature4.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 11/33] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:35:43 2018] GET /media/courses/2018/05/mysql.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 23/34] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:35:43 2018] GET /static/images/module1_1.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 12/35] 117.136.67.242 () {50 vars in 987 bytes} [Tue May 22 16:35:43 2018] GET /media/courses/2018/05/540e57300001d6d906000338-240-135_MSIqfvw.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 24/36] 117.136.67.242 () {50 vars in 987 bytes} [Tue May 22 16:35:43 2018] GET /media/courses/2018/05/57035ff200014b8a06000338-240-135_dHfj8Nq.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 13/37] 117.136.67.242 () {50 vars in 921 bytes} [Tue May 22 16:35:43 2018] GET /static/js/plugins/laydate/laydate.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 25/38] 117.136.67.242 () {50 vars in 989 bytes} [Tue May 22 16:35:43 2018] GET /media/courses/2018/05/python%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86.jpg => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 14/39] 117.136.67.242 () {50 vars in 987 bytes} [Tue May 22 16:35:43 2018] GET /media/courses/2018/05/57035ff200014b8a06000338-240-135_0nFiBSI.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 26/40] 117.136.67.242 () {50 vars in 960 bytes} [Tue May 22 16:35:43 2018] GET /media/courses/2018/05/mysql_Y5wGew6.jpg => generated 668 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 15/41] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/imooc_OO2ykYP.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 27/42] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:35:43 2018] GET /static/images/module3_1.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 16/43] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/jike.jpg => generated 668 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 28/44] 117.136.67.242 () {50 vars in 917 bytes} [Tue May 22 16:35:43 2018] GET /static/js/plugins/layer/layer.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 17/45] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/maizi.jpg => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 29/46] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/mooc.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 18/47] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/kehan.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 30/48] 117.136.67.242 () {50 vars in 950 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/tengxun.png => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 19/49] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/bjdx.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 31/50] 117.136.67.242 () {50 vars in 925 bytes} [Tue May 22 16:35:43 2018] GET /static/js/plugins/queryCity/js/public.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 20/51] 117.136.67.242 () {50 vars in 948 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/imooc.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 32/52] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/imooc_V0TJOyb.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 21/53] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:35:43 2018] GET /media/org/2018/05/qhdx-logo.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 33/54] 117.136.67.242 () {50 vars in 906 bytes} [Tue May 22 16:35:43 2018] GET /static/js/unslider.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 22/55] 117.136.67.242 () {50 vars in 947 bytes} [Tue May 22 16:35:43 2018] GET /static/images/footlogo.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 34/56] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:35:43 2018] GET /static/images/code.jpg => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 35/57] 117.136.67.242 () {50 vars in 943 bytes} [Tue May 22 16:35:43 2018] GET /static/images/tell.png => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 23/58] 117.136.67.242 () {50 vars in 926 bytes} [Tue May 22 16:35:43 2018] GET /static/js/plugins/jquery.scrollLoading.js => generated 668 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23901|app: 0|req: 36/59] 117.136.67.242 () {50 vars in 909 bytes} [Tue May 22 16:35:43 2018] GET /static/js/deco-common.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 23902|app: 0|req: 24/60] 117.136.67.242 () {50 vars in 903 bytes} [Tue May 22 16:35:43 2018] GET /static/js/index.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+WSGI app 1 (mountpoint='127.0.0.1|') ready in 1 seconds on interpreter 0x24068b0 pid: 23901
+127.0.0.1 [pid: 23901|app: 1|req: 1/61] 127.0.0.1 () {42 vars in 567 bytes} [Tue May 22 16:40:01 2018] GET /static/images/footlogo.png => generated 668 bytes in 1210 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue May 22 16:42:32 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-16) on 22 May 2018 06:32:37
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_170_79_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/.virtualenvs/mxonline2/projects/MxOnline
+detected binary path: /root/.virtualenvs/mxonline2/bin/uwsgi
+setuid() to 1001
+your processes number limit is 3895
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+building mime-types dictionary from file /etc/mime.types...1060 entry found
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to TCP address 127.0.0.1:18883 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x14e18e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 321048 bytes (313 KB) for 2 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24386)
+spawned uWSGI worker 1 (pid: 24387, cores: 1)
+spawned uWSGI worker 2 (pid: 24388, cores: 1)
+WSGI app 0 (mountpoint='139.199.23.236|') ready in 1 seconds on interpreter 0x14e18e0 pid: 24387
+139.199.23.236 [pid: 24387|app: 0|req: 1/1] 117.136.67.242 () {52 vars in 987 bytes} [Tue May 22 16:42:37 2018] GET / => generated 26567 bytes in 811 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+WSGI app 0 (mountpoint='139.199.23.236|') ready in 0 seconds on interpreter 0x14e18e0 pid: 24388
+139.199.23.236 [pid: 24388|app: 0|req: 1/2] 117.136.67.242 () {52 vars in 987 bytes} [Tue May 22 16:44:23 2018] GET / => generated 26567 bytes in 851 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 2/3] 117.136.67.242 () {52 vars in 987 bytes} [Tue May 22 16:45:48 2018] GET / => generated 26567 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 2/4] 117.136.67.242 () {50 vars in 971 bytes} [Tue May 22 16:45:50 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 3/5] 117.136.67.242 () {50 vars in 970 bytes} [Tue May 22 16:46:22 2018] GET /xadmin/ => generated 23665 bytes in 1099 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 3/6] 117.136.67.242 () {50 vars in 912 bytes} [Tue May 22 16:46:23 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 4/7] 117.136.67.242 () {52 vars in 1051 bytes} [Tue May 22 16:46:32 2018] GET /xadmin/users/userprofile/ => generated 54574 bytes in 156 msecs (HTTP/1.1 200) 8 headers in 504 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 4/8] 117.136.67.242 () {50 vars in 930 bytes} [Tue May 22 16:46:32 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 5/9] 117.136.67.242 () {52 vars in 1069 bytes} [Tue May 22 16:46:34 2018] GET /xadmin/operation/userask/ => generated 46211 bytes in 117 msecs (HTTP/1.1 200) 8 headers in 504 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 5/10] 117.136.67.242 () {50 vars in 930 bytes} [Tue May 22 16:46:35 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 6/11] 117.136.67.242 () {52 vars in 1069 bytes} [Tue May 22 16:46:42 2018] GET /xadmin/users/userprofile/ => generated 54574 bytes in 117 msecs (HTTP/1.1 200) 8 headers in 504 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 6/12] 117.136.67.242 () {50 vars in 930 bytes} [Tue May 22 16:46:43 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 7/13] 117.136.67.242 () {52 vars in 1087 bytes} [Tue May 22 16:46:44 2018] GET /xadmin/users/userprofile/4/update/ => generated 45109 bytes in 263 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 8/14] 117.136.67.242 () {50 vars in 951 bytes} [Tue May 22 16:46:45 2018] GET /static/ueditor/ueditor.config.js => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 7/15] 117.136.67.242 () {50 vars in 939 bytes} [Tue May 22 16:46:45 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 9/16] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:46:45 2018] GET /static/ueditor/ueditor.all.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 8/17] 117.136.67.242 () {50 vars in 951 bytes} [Tue May 22 16:46:45 2018] GET /static/ueditor/ueditor.config.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 10/18] 117.136.67.242 () {50 vars in 952 bytes} [Tue May 22 16:46:45 2018] GET /static/ueditor/ueditor.all.min.js => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 9/19] 117.136.67.242 () {60 vars in 1352 bytes} [Tue May 22 16:46:52 2018] POST /xadmin/users/userprofile/4/update/ => generated 0 bytes in 122 msecs (HTTP/1.1 302) 8 headers in 495 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 11/20] 117.136.67.242 () {54 vars in 1281 bytes} [Tue May 22 16:46:52 2018] GET /xadmin/users/userprofile/ => generated 54804 bytes in 114 msecs (HTTP/1.1 200) 9 headers in 586 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 10/21] 117.136.67.242 () {50 vars in 930 bytes} [Tue May 22 16:46:52 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 12/22] 117.136.67.242 () {50 vars in 956 bytes} [Tue May 22 16:47:12 2018] GET / => generated 26567 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 11/23] 117.136.67.242 () {50 vars in 971 bytes} [Tue May 22 16:47:12 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 13/24] 117.136.67.242 () {54 vars in 1009 bytes} [Tue May 22 16:47:36 2018] GET / => generated 26567 bytes in 85 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 12/25] 117.136.67.242 () {54 vars in 1024 bytes} [Tue May 22 16:47:39 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 14/26] 117.136.67.242 () {52 vars in 987 bytes} [Tue May 22 16:50:36 2018] GET / => generated 26569 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 13/27] 117.136.67.242 () {52 vars in 1016 bytes} [Tue May 22 16:50:44 2018] GET /org/home/6/ => generated 10185 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 15/28] 117.136.67.242 () {50 vars in 982 bytes} [Tue May 22 16:50:44 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 14/29] 117.136.67.242 () {52 vars in 1031 bytes} [Tue May 22 16:50:46 2018] GET /org/course/6/ => generated 9549 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 16/30] 117.136.67.242 () {50 vars in 984 bytes} [Tue May 22 16:50:46 2018] GET /media/image/2018/05/default_middile_7_hCLQD4Q.png/ => generated 668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 15/31] 117.136.67.242 () {54 vars in 1062 bytes} [Tue May 22 16:52:38 2018] GET /org/course/6/ => generated 9551 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 17/32] 117.136.67.242 () {60 vars in 1186 bytes} [Tue May 22 16:52:40 2018] POST /org/add_fav/ => generated 42 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 16/33] 117.136.67.242 () {54 vars in 1062 bytes} [Tue May 22 16:52:42 2018] GET /org/course/6/ => generated 9551 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 18/34] 117.136.67.242 () {52 vars in 1025 bytes} [Tue May 22 16:52:45 2018] GET /org/list/ => generated 19647 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 17/35] 117.136.67.242 () {52 vars in 1027 bytes} [Tue May 22 16:52:46 2018] GET /course/list/ => generated 15221 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 19/36] 117.136.67.242 () {52 vars in 1030 bytes} [Tue May 22 16:52:49 2018] GET /course/list/ => generated 15221 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 18/37] 117.136.67.242 () {52 vars in 1077 bytes} [Tue May 22 16:52:55 2018] GET /xadmin/organization/citydict/ => generated 48014 bytes in 1286 msecs (HTTP/1.1 200) 8 headers in 504 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 20/38] 117.136.67.242 () {50 vars in 934 bytes} [Tue May 22 16:52:56 2018] GET /xadmin/jsi18n/ => generated 4869 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 19/39] 117.136.67.242 () {52 vars in 1006 bytes} [Tue May 22 16:53:16 2018] GET / => generated 26569 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 21/40] 117.136.67.242 () {52 vars in 1018 bytes} [Tue May 22 16:53:34 2018] GET /course/list/ => generated 15221 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 20/41] 117.136.67.242 () {52 vars in 1040 bytes} [Tue May 22 16:53:37 2018] GET /org/teacher/list/ => generated 14384 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 22/42] 117.136.67.242 () {52 vars in 1029 bytes} [Tue May 22 16:53:38 2018] GET /org/list/ => generated 19647 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 21/43] 117.136.67.242 () {52 vars in 1025 bytes} [Tue May 22 16:53:40 2018] GET /users/info/ => generated 20485 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 23/44] 117.136.67.242 () {52 vars in 1035 bytes} [Tue May 22 16:53:42 2018] GET /users/mycourse/ => generated 20038 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 22/45] 117.136.67.242 () {52 vars in 1041 bytes} [Tue May 22 16:53:44 2018] GET /users/myfav/org/ => generated 18945 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 24/46] 117.136.67.242 () {52 vars in 1042 bytes} [Tue May 22 16:53:45 2018] GET /users/mymessage/ => generated 18137 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 23/47] 117.136.67.242 () {52 vars in 1040 bytes} [Tue May 22 16:53:48 2018] GET /users/mycourse/ => generated 20038 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 25/48] 117.136.67.242 () {52 vars in 1041 bytes} [Tue May 22 16:53:50 2018] GET /users/myfav/org/ => generated 18945 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 24/49] 117.136.67.242 () {52 vars in 1050 bytes} [Tue May 22 16:53:51 2018] GET /users/myfav/teacher/ => generated 19780 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24387|app: 0|req: 26/50] 117.136.67.242 () {52 vars in 1052 bytes} [Tue May 22 16:53:53 2018] GET /users/myfav/course/ => generated 17863 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+139.199.23.236 [pid: 24388|app: 0|req: 25/51] 117.136.67.242 () {52 vars in 1013 bytes} [Tue May 22 16:53:55 2018] GET / => generated 26569 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
